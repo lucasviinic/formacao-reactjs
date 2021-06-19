@@ -2,9 +2,21 @@ import React from "react";
 import { Button, TextField, Switch, FormControlLabel } from "@material-ui/core";
 
 function FormularioCadastro() {
+  let nome = "Lucas"
+  state = {}
   return (
-    <form>
+    <form onSubmit={(event) => {
+      console.log(nome)
+      event.preventDefault()
+    }}>
       <TextField
+        value={nome}
+        onChange={(event) => {
+          nome = event.target.value
+          if (nome.length > 3){
+            nome = nome.substr(0, 3);
+          }
+        }}
         id="nome"
         label="Nome"
         variant="outlined"
