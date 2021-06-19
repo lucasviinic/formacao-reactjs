@@ -1,16 +1,19 @@
-import './App.css';
-import React, { Component, Fragment } from 'react';
-import FormularioCadastro from './components/FormularioCadastro/FormularioCadastro';
+import './App.css'
+import React, { Component, Fragment } from 'react'
+import FormularioCadastro from './components/FormularioCadastro/FormularioCadastro'
+
+import 'fontsource-roboto'
+import { Container, Typography } from '@material-ui/core'
 
 class App extends Component {
   render(){
     return (
-      <Fragment>
-        <h1>Formulário de Cadastro</h1>
+      <Container component="article" maxWidth="sm" style={{marginTop: 80}}>
+        <Typography variant="h4" component="h1" align="center">Formulário de Cadastro</Typography>
         <FormularioCadastro />
-      </Fragment>
-    );
+      </Container>
+    )
   }
 }
 
-export default App;
+export default App
