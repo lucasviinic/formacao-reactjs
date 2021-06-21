@@ -10,10 +10,14 @@ class App extends Component {
     return (
       <Container component="article" maxWidth="sm" style={{marginTop: 80}}>
         <Typography variant="h4" component="h1" align="center">Formulário de Cadastro</Typography>
-        <FormularioCadastro />
+        <FormularioCadastro onSubmit={onSubmitForm} />
       </Container>
     )
   }
+}
+
+function onSubmitForm(dados){
+  console.log(dados)
 }
 
 export default App
