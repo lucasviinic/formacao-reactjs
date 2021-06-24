@@ -42,7 +42,6 @@ function DadosPessoais({aoEnviar, validarCPF}) {
         onChange={(event) => {
           setCpf(event.target.value);
         }}
-
         onBlur={(event)=>{
           const ehValido = validarCPF(cpf);
           setErros({cpf:ehValido})

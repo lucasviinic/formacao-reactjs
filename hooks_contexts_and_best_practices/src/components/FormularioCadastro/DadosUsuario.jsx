@@ -1,14 +1,30 @@
-import React from 'react';
+import React from "react";
 import { TextField, Button, Switch, FormControlLabel } from "@material-ui/core";
 
-function DadosUsuario(){
-    return(
-        <form>
-            <TextField id="email" label="Email" type="email" />
-            <TextField id="senha" label="Senha" type="password" />
-            <Button type="submit">Cadastrar</Button>
-        </form>
-    )
+function DadosUsuario() {
+  return (
+    <form>
+      <TextField
+        id="email"
+        label="Email"
+        type="email"
+        variant="outlined"
+        margin="normal"
+        fullWidth
+      />
+      <TextField
+        id="senha"
+        label="Senha"
+        type="password"
+        variant="outlined"
+        margin="normal"
+        fullWidth
+      />
+      <Button type="submit" variant="contained" color="primary">
+        Cadastrar
+      </Button>
+    </form>
+  );
 }
 
 export default DadosUsuario;
