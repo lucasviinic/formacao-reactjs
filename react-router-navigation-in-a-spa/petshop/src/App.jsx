@@ -6,10 +6,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./paginas/Home";
 import Sobre from "./paginas/Sobre";
 import PageNotFound from "./paginas/PageNotFound";
+import Cabecalho from './components/Cabecalho'
 
 function App() {
   return (
     <Router>
+      <Cabecalho />
       <Switch>
         <Route exact path="/">
           <Home />
