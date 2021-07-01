@@ -1,24 +1,28 @@
-import React from 'react'
-import './assets/css/base/base.css'
-import Home from './paginas/Home'
-import Sobre from './paginas/Sobre'
+import React from "react";
+import "./assets/css/base/base.css";
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Home from "./paginas/Home";
+import Sobre from "./paginas/Sobre";
+import PageNotFound from "./paginas/PageNotFound";
 
 function App() {
-
-  const Router = () => {
-    const location = window.location.pathname;
-    if (location === '/sobre'){
-      return <Sobre />
-    } else {
-      return <Home />
-    }
-  }
-
   return (
-  <>
-    { Router() }
-  </>
-  )
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/sobre">
+          <Sobre />
+        </Route>
+        <Route>
+          <PageNotFound />
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
 
-export default App
+export default App;
