@@ -44,6 +44,24 @@
       "valor": "10",
       "data": "09/07/2021",
       "id": 7
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "09/07/2021",
+      "id": 8
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "10/07/2021",
+      "id": 9
+    },
+    {
+      "transacao": "saque",
+      "valor": "10",
+      "data": "10/07/2021",
+      "id": 10
     }
   ]
 }
